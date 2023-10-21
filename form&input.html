@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input[type=submit]{
+            border: 1px solid black;
+            background-color: white;
+            border-radius:5px;
+        }
+        .z label{
+            color: orangered;
+        }
+        div{
+            padding: 50px;
+            margin:20px 0;
+            border: 2px solid red;
+        }
+        table{
+            border-collapse: collapse;
+        }
+
+
+        table.a td{
+            border-right: rgba(0, 0, 0, 0.2) 1px solid;
+        }
+        table.a tr:nth-child(2n-1) {
+            background:  rgba(0, 0, 0, 0.2) ;
+        }
+
+
+        div.b table {
+            width:100%;
+            border-collapse: collapse;
+        }
+        div.b th{
+            font-weight: 400;
+            text-align: center;
+            color: white;
+            background-color: rgba(255, 20, 0, 1);
+            padding:20px 0;
+            border-color: white;
+            border: 1px solid white;
+        }
+        div.b td{
+            text-align: center;
+            border: 1px solid black;
+            padding: 20px 0;
+        }
+
+
+    </style>
+</head>
+<body style ="font-family:'Lucida Sans Unicode', Tahoma, sans-serif;">
+    <div>
+        <h1>Tạo form cơ bản</h1>
+        <h1>Order food</h1>
+        <form action="">
+            <h2>what would you like to buy?</h2>
+            <select style="width:200px;>
+            <option " value="a">a</option>
+            </select>
+            <h2>How many would you like to order?</h2>
+            <label><input name="gia" value="10$" type="radio" /> 1 - 10$</label> <br/>
+            <label><input name="gia" value="20$" type="radio"/> 1 - 20$</label> <br/>
+            <label><input name="gia" value="25$" type="radio"/> 1 - 25$</label> <br/>
+
+            <h2>Name <span style="color:red">*</span></h2>
+            <input type = "text" placeholder=" Firstname" name="fname" width="150"/>
+            <input type = "text" placeholder=" Lastname" name="lname" width="150"/>
+
+
+            <h2>Email</h2>
+            <input type="email" id="email" name="email" style="width:300px;"/>
+
+            <h2>phone number</h2>
+            <input type = "tel" style="width:50px;" > <span style="font-size:30px">-</span>
+            <input type = "tel" style="width:50px;" > <span style="font-size:30px">-</span>
+            <input type = "tel" style="width:50px;" >
+            <p>
+                <button>submit</button>
+            </p>
+        </form>
+    </div>
+<div>
+    <!-- TẠO MÔỘT FORM TÌM KIẾM GOOGLE-->
+    <h1>TẠO MỘT FORM TIÌM KIẾM GOOGLE</h1>
+
+    <form action = "https://www.google.com/search" method="get">
+        <input type ="text" name="q" />
+        <input type="submit" value="Tìm kiếm"/>
+    </form>
+</div>
+<div class="z">
+<form>
+        <table>
+            <tr style = "font-size:27px; background-color: orange"><th colspan="4">Sở thích của bạn</th></tr>
+            <tr>
+                <td style = "color: dodgerblue;">Họ và tên</td>
+                <td colspan="3"><input type ="text" name ="fullname"></td>
+            </tr>
+            <tr>
+                <td style = "color: dodgerblue;">Email</td>
+                <td colspan="2"><input type ="email" name ="mail"></td>
+            </tr>
+            <tr>
+                <td style = "color: dodgerblue;" rowspan = "3">Sở thích</td>
+                <td><label><input type ="checkbox" name = "sở thích" value="thethao"> the thao</label></td>
+                <td><label><input type ="checkbox" name = "sở thích" value="thethao"> the thao</label></td>
+                <td><label><input type ="checkbox" name = "sở thích" value="thethao"> the thao</label></td>
+            </tr>
+            <tr>
+                <td><label><input type ="checkbox" name = "sở thích" value="thethao"> the thao</label></td>
+                <td><label><input type ="checkbox" name = "sở thích" value="thethao"> the thao</label></td>
+                <td><label><input type ="checkbox" name = "sở thích" value="thethao"> the thao</label></td>
+            </tr>
+            <tr>
+                <td><label><input type ="checkbox" name = "sở thích" value="thethao"> the thao</label></td>
+                <td><label><input type ="checkbox" name = "sở thích" value="thethao"> the thao</label></td>
+                <td><label><input type ="checkbox" name = "sở thích" value="thethao"> the thao</label></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<div>
+    <!--TAOJ BẢNG CƠ BẢN-->
+    <h1>tạo bảng cơ bản</h1>
+    <table class="a">
+        <tr>
+            <th style="text-align:left; width:300px;">Company</th>
+            <th style="text-align:left; width:150px">Contact</th>
+            <th style="text-align:left; width:130px;">Country</th>
+        </tr>
+        <tr>
+            <td>Alfred Futerkite</td>
+            <td>Maria Ander</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro convercial Mocteruma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst</td>
+            <td>ronalmendo</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Island trading</td>
+            <td>Helen Benlet</td>
+            <td>Uk</td>
+        </tr>
+        <tr>
+            <td>launghing bachus</td>
+            <td>Yoshi Tanamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>italy</td>
+            <td>Giovani</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+</div>
+<div class="b">
+    <h1> Tạo bảng nâng cao</h1>
+    <table>
+        <tr>
+            <th rowspan="2">Thứ</th>
+            <th colspan = "2">Hoạt động</th>
+        </tr>
+        <tr>
+            <th>Sáng</th>
+            <th>Chiều</th>
+        </tr>
+        <tr>
+            <td>Thứ 2</td>
+            <td>thể dục</td>
+            <td> trò chơi</td>
+        </tr>
+        <tr>
+            <td>thứ3</td>
+            <td>Nhận biết tập nói</td>
+            <td>rèn nề nếp kỹ năng sống</td>
+        </tr>
+        <tr>
+            <td>thứ 4</td>
+            <td>âm nhạc </td>
+            <td>vui chơi</td>
+        </tr>
+        <tr>
+            <td>thứ 5</td>
+            <td>Văn học</td>
+            <td>Nhận biết kỹ năng sống</td>
+        </tr>
+    </table>
+</div>
+<div class="c">
+    <h1>Tạo giao diện form đăng ký người dùng</h1>
+
+    <form action="http://demo.codegym.vn/6/registration_form/register.php">
+        <label for = "name">
+            <h2 style = "margin:5px;">Họ Và Tên</h2>
+        </label>
+        <input type="text" name="name" id ="name">
+        label for = "name">
+
+        <label for = "mail">
+            <h2 style = "margin:5px;">Email</h2>
+        </label>
+        <input type="email" name="email" id ="mail"/>
+
+        <label for = "phone">
+            <h2 style = "margin:5px;">Số Điện Thoại</h2>
+        </label>
+        <input type="tel" name="phone" id ="phone">
+        label for = "name">
+
+        <h2>Giới Tính</h2>
+        <input type="radio" name="gender" id="Nam">
+        <label for="Nam" style  = "font-size: 20px; font-weight: 600;">Nam</label>
+        <input type="radio" name="gender" id="Nữ">
+        <label for="Nữ" style  = "font-size: 20px; font-weight: 600;">Nữ</label>
+
+        <br><br>
+
+        <input type="submit" value="Đăng ký" >
+
+    </form>
+</div>
+
+
+</body>
+</html>
